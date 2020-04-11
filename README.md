@@ -13,10 +13,13 @@ LED RED: autoshutdown process is started and the printer shutdown after 10 sec.
 To control the device, there is two inputs one for GND and other for digital PIN from printer motherboards.
 
 To control digital PIN in start gcode put this string before all command 
+
 M42 M1 P(pin motherboard) S255 ;activate pin for autoshutdown
 
 and in end gcode put this string after all command
+
 M109 R50; Wait for the hotend to cool down to 50C
+
 M42 M1 P(pin motherboard) S0 ;deactivate pin for autoshutdown
 
 Write the firmware on arduino
