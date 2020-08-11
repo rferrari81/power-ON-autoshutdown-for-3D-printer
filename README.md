@@ -27,3 +27,5 @@ M109 R50; Wait for the hotend to cool down to 50C
 M42 M1 P(pin motherboard) S0 ;deactivate pin for autoshutdown
 
 Write the firmware on arduino
+
+RASPBERRY CONFIG FILE
