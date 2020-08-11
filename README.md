@@ -35,5 +35,4 @@ edit GPIO you have connected in raspy-off.py file.
 Now we want to set up the system so that this script will run at every boot-up. Open the rc.local file with this:
 sudo nano /etc/rc.local
 Then navigate to the bottom of this file and just before the "exit 0" line which is at the very end, add this:
-python /home/pi/raspy-off.py before exit 0.
-SAVE and REBOOT.
+python /home/pi/raspy-off.py SAVE and REBOOT.
